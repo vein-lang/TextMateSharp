@@ -1,0 +1,49 @@
+{
+  "name": "vein",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "version": "1.0.0",
+  "publisher": "vscode",
+  "license": "MIT",
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "scripts": {
+    "update-grammar": "node node_modules/vscode-grammar-updater/bin vein-lang/tmLanguage grammars/vein.tmLanguage ./syntaxes/vein.tmLanguage.json"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "vein",
+        "extensions": [
+          ".vein"
+        ],
+        "aliases": [
+          "Vein Lang",
+          "vein"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vein",
+        "scopeName": "source.vein",
+        "path": "./syntaxes/vein.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "vein",
+        "path": "./snippets/vein.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/vscode.git"
+  },
+  "dependencies": {
+    "vscode-grammar-updater": "^1.1.0"
+  }
+}

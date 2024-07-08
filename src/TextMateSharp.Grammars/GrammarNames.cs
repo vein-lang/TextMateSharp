@@ -51,6 +51,7 @@
             "TypescriptBasics",
             "VB",
             "XML",
+            "Vein",
             "YAML"
         };
     }

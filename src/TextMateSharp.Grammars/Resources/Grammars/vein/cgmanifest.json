@@ -1,0 +1,18 @@
+{
+	"registrations": [
+		{
+			"component": {
+				"type": "git",
+				"git": {
+					"name": "vein-lang/tmLanguage",
+					"repositoryUrl": "https://github.com/vein-lang/tmLanguage",
+					"commitHash": "13744b15ee51be58abe6b6c8ed6f2e6e12119d7b"
+				}
+			},
+			"license": "MIT",
+			"version": "0.1.0",
+			"description": "The file syntaxes/vein.tmLanguage.json was derived from https://github.com/vein-lang/tmLanguage"
+		}
+	],
+	"version": 1
+}
